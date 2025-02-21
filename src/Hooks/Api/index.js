@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const getLatestAnime = async () => {
     try {
-        const response = await axios.get("https://kumanimeapi.vercel.app/api/home");
+        const response = await axios.get("https://kumanime.vercel.app/api/home");
         return response.data;
     } catch (error) {
         return error.message;
